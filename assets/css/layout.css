@@ -1,0 +1,42 @@
+/*  MARK: LAYOUT
+*/
+:root {
+  --max-column-width: 300px; /* Maximum column width */
+  --gap: 1rem; /* Spacing between columns */
+}
+
+body {
+  display: block;
+  overflow-x: clip;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+nav {
+  input[type="radio"] {
+    position: absolute;
+    left: -200dvw;
+  }
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 5em));
+    justify-content: end;
+    /* gap: 1em; */
+    list-style: none;
+
+    li {
+      padding-block: 0.5em;
+    }
+  }
+}
+
+/* ======== Sticky Footer ========= */
+footer {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  bottom: 0;
+}
