@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
+    <base href="/">
     <meta name="apple-mobile-web-app-title" content="International.Dance">
     <link rel="apple-touch-icon" type="image/png" href="assets/images/pwa/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/pwa/favicon.ico">
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Electrolize&family=Geo:ital@0;1&family=Iceland&family=Lavishly+Yours&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sarpanch:wght@400;500;600;700;800;900&family=Teko:wght@300..700&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Electrolize&family=Geo:ital@0;1&family=Iceland&family=Lavishly+Yours&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sarpanch:wght@400;500;600;700;800;900&family=Teko:wght@300..700&display=swap">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/hero.css">
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/cards.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/scheme.css">
     <title>International.Dance - Happiness Through Dancing!</title>
     <script>
       window.console = window.console || function (t) { };
@@ -29,7 +32,7 @@
     <app-container>
       <header>
         <app-logo>International.Dance</app-logo>
-        <nav role="tablist" aria-label="Navigation">
+        <menu role="tablist" aria-label="Navigation">
           <input type="radio" name="nav" id="nav01" aria-controls="HOME" checked>
           <label for="nav01">HOME</label>
           <input type="radio" name="nav" id="nav02" aria-controls="ABOUT">
@@ -42,8 +45,9 @@
           <label for="nav05">POLICY</label>
           <input type="radio" name="nav" id="nav06" aria-controls="CONTACT">
           <label for="nav06">CONTACT</label>
-        </nav>
+        </menu>
       </header>
+      <!-- <nav></nav> -->
       <main>
         <article class="creative-parallax--slider">
           <div class="slider-inner">

@@ -15,20 +15,21 @@ header {
   grid-template-columns: 1fr auto;
 }
 
-nav {
+menu {
   input[type="radio"] {
     position: absolute;
     left: -200dvw;
   }
-  ul {
-    grid-template-columns: repeat(auto-fit, minmax(auto, 5em));
-    justify-content: end;
-    /* gap: 1em; */
-    list-style: none;
+}
 
-    li {
-      padding-block: 0.5em;
-    }
+ul {
+  grid-template-columns: repeat(auto-fit, minmax(auto, 5em));
+  justify-content: end;
+  /* gap: 1em; */
+  list-style: none;
+
+  li {
+    padding-block: 0.5em;
   }
 }
 
